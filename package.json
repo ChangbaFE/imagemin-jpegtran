@@ -1,23 +1,23 @@
 {
-  "name": "imagemin-jpegtran",
+  "name": "imagemin-jpegtran-changba",
   "version": "7.0.0",
   "description": "jpegtran imagemin plugin",
   "license": "MIT",
-  "repository": "imagemin/imagemin-jpegtran",
+  "repository": "ChangbaFE/imagemin-jpegtran",
   "author": {
     "name": "Kevin Mårtensson",
     "email": "kevinmartensson@gmail.com",
-    "url": "github.com/kevva"
+    "url": "https://github.com/kevva"
   },
   "maintainers": [
     {
       "name": "Sindre Sorhus",
       "email": "sindresorhus@gmail.com",
-      "url": "sindresorhus.com"
+      "url": "https://sindresorhus.com"
     },
     {
       "name": "Shinnosuke Watanabe",
-      "url": "github.com/shinnn"
+      "url": "https://github.com/shinnn"
     }
   ],
   "engines": {
@@ -43,7 +43,7 @@
   "dependencies": {
     "exec-buffer": "^3.0.0",
     "is-jpg": "^2.0.0",
-    "jpegtran-bin": "^5.0.0"
+    "jpegtran-changba": "^6.0.0"
   },
   "devDependencies": {
     "ava": "^3.8.0",

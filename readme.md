@@ -1,4 +1,4 @@
-# imagemin-jpegtran [![Build Status](https://travis-ci.org/imagemin/imagemin-jpegtran.svg?branch=master)](https://travis-ci.org/imagemin/imagemin-jpegtran)
+# imagemin-jpegtran-changba [![Build Status](https://travis-ci.org/ChangbaFE/imagemin-jpegtran.svg?branch=master)](https://travis-ci.org/ChangbaFE/imagemin-jpegtran)
 
 > jpegtran imagemin plugin
 
@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save imagemin-jpegtran
+$ npm install --save imagemin-jpegtran-changba
 ```
 
 
@@ -14,20 +14,19 @@ $ npm install --save imagemin-jpegtran
 
 ```js
 const imagemin = require('imagemin');
-const imageminJpegtran = require('imagemin-jpegtran');
+const imageminJpegtran = require('imagemin-jpegtran-changba');
 
 (async () => {
-	await imagemin(['images/*.jpg'], {
-		destination: 'build/images',
-		plugins: [
-			imageminJpegtran()
-		]
-	});
+  await imagemin(['images/*.jpg'], {
+    destination: 'build/images',
+    plugins: [
+      imageminJpegtran()
+    ]
+  });
 
-	console.log('Images optimized');
+  console.log('Images optimized');
 })();
 ```
-
 
 ## API
 
@@ -56,7 +55,6 @@ Use [arithmetic coding](http://en.wikipedia.org/wiki/Arithmetic_coding).
 Type: `buffer`
 
 Buffer to optimize.
-
 
 ## License
 
