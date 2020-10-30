@@ -1,6 +1,6 @@
 {
   "name": "imagemin-jpegtran-changba",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "description": "jpegtran imagemin plugin",
   "license": "MIT",
   "repository": "ChangbaFE/imagemin-jpegtran",
