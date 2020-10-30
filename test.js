@@ -9,21 +9,21 @@ const m = require('.');
 const readFile = promisify(fs.readFile);
 
 test('optimize a JPG', async t => {
-	const buf = await readFile(path.join(__dirname, 'fixture.jpg'));
-	const data = await m()(buf);
-	t.true(data.length < buf.length);
-	t.true(isJpg(data));
+  const buf = await readFile(path.join(__dirname, 'fixture.jpg'));
+  const data = await m()(buf);
+  t.true(data.length < buf.length);
+  t.true(isJpg(data));
 });
 
 test('throw error when a JPG is corrupt', async t => {
-	const buf = await readFile(path.join(__dirname, 'fixture-corrupt.jpg'));
-	await t.throwsAsync(async () => {
-		await m()(buf);
-	}, {message: /Corrupt JPEG data/});
+  const buf = await readFile(path.join(__dirname, 'fixture-corrupt.jpg'));
+  await t.throwsAsync(async () => {
+    await m()(buf);
+  }, {message: /Corrupt JPEG data/});
 });
 
 test('progressive option', async t => {
-	const buf = await readFile(path.join(__dirname, 'fixture.jpg'));
-	const data = await m({progressive: true})(buf);
-	t.true(isProgressive.buffer(data));
+  const buf = await readFile(path.join(__dirname, 'fixture.jpg'));
+  const data = await m({progressive: true})(buf);
+  t.true(isProgressive.buffer(data));
 });
